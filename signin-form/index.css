@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+/* Utils */
+:root{
+ --font: 'Montserrat', sans-serif;
+}
+
+.ui-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
+
+.color-gray{
+    color: #999;
+}
+
+
+
+/* Reset */
+i.bx{
+    color: #fff;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(100, 149, 237);
+}
+
+/* Styles */
+.auth{
+    background-color: #ECF0F1;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+.auth-container{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.auth-container__split{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.auth-left, .auth-right{
+    flex-basis: 50%;
+}
+.auth-left{
+    background-color: #fff;
+    padding: 100px 0;
+    border-radius: 8px 0 0 8px;
+}
+.auth-left .wrapper{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.auth-left .wrapper h2{
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.auth-left .input-form{
+    margin-top: 10px;
+}
+.password-settings p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+input[type=checkbox]{
+    transform: translateY(2px);
+}
+input:not([type=checkbox]):focus{
+    box-shadow: 0 0 0 0.125em rgba(100, 149, 237, 0.25);
+    border-color: rgb(100, 149, 237);
+}
+
+
+input:not(input[type=checkbox]), button{
+    display: block;
+    width: 100%;
+    font-family: var(--font);
+}
+
+label{
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+button{
+    text-transform: none;
+}
+button[type=submit]{
+    background-color: #222;
+    color: #fff;
+    position: relative;
+}
+button[type=button] img{
+   transform: translate(-10px, 6px);
+   width: 20px;
+}
+
+.auth-footer{
+    padding-top: 15px;
+    font-size: 1.3rem;
+}
+
+/* End of left auth */
+
+.auth-right{
+    background-image: url(./juliana.jpg);
+    display: table;
+    background-position:  center;
+    background-size: cover;
+    border-radius: 0 8px 8px 0;
+    padding: 30px;
+}
+
+.auth-right .wrapper{
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.auth-right .content-wrap{
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    padding: 20px;
+}
+.auth-right .content-wrap h4{
+    color: #fff;
+    font-weight: 400;
+    font-size: 2rem;
+     max-width: 90%;
+}
+.content-wrap__author h3{
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+.rating {
+    transform: translateY(4px);
+    font-size: 1.2rem;
+}
+
+.content-wrap-author__footer p, .content-wrap-author__footer small{
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.content-wrap-author__footer p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.action-icons{
+    width: 100px;
+    margin-left: auto;
+}
+
+.action-icons .icon{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    margin-left: auto;
+    position: relative;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.icon i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
