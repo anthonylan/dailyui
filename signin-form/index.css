@@ -113,7 +113,6 @@ input:not(input[type=checkbox]), button{
 }
 
 label{
-    font-weight: 400;
     margin-bottom: 0px;
     font-size: 1.2rem;
     font-weight: 500;
